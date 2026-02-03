@@ -1,0 +1,21 @@
+https://gfwsl.geforce.com/nvidia_web_services/controller.php?com.nvidia.services.Drivers.getMenuArrays/{%22pt%22:%221%22,%22cookieEmpty%22:false,%22sa%22:%221%22,%22driverType%22:%22all%22,%22pst%22:null,%22d2%22:%221073%22,%22d4%22:%2257%22} --> To get all data from menu (as json)
+
+
+https://gfwsl.geforce.com/services_toolkit/services/com/nvidia/services/AjaxDriverService.php?func=DriverManualLookup&psid=120&pfid=942&osID=57&languageCode=1033&beta=0&isWHQL=0&dltype=-1&dch=1&upCRD=1&qnf=0&ctk=null&sort1=1&numberOfResults=1 --> URL for getting the driver itself
+
+PSID = series of boards
+OSID = os ID
+
+{"pt":"1","cookieEmpty":false,"sa":"1","driverType":"all","pst":null,"d2":"1073","d4":"57"}
+{"pt":"1","pst":"101","d2":"1073","d4":"57","d5":"1033","d6":"null","driverType":"all","cookieEmpty":false,"sa":"1"}
+
+
+d4=system id
+d2=board id
+pt=type (first one)
+pst=series
+d5=language
+
+
+
+GET /services_toolkit/services/com/nvidia/services/AjaxDriverService.php?func=DriverManualLookup&psid=101&pfid=845&osID=12&languageCode=1033&beta=null&isWHQL=0&dltype=-1&dch=0&upCRD=null&qnf=0&ctk=null&sort1=1&numberOfResults=1 HTTP/2
